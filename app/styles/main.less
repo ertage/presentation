@@ -1,0 +1,51 @@
+body, html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  background: #fafafa;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slide{
+  position: relative;
+  box-sizing:border-box;
+  padding: 30px;
+  height: 100%;
+  background-color: #fffaf0;
+  text-align: center;
+  transform: scale(0);
+
+
+  &__title{
+    margin: 30px 0 15px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 50px;
+
+    &.slide_title_size_sm{
+      margin: 10px;
+      font-size: 40px;
+    }
+  }
+  &:target{
+    transform: scale(1);
+  }
+}
+.author{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-weight: 700;
+  font-size: 20px;
+}
+.html5{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-weight: 700;
+  font-size: 40px;
+}
